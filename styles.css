@@ -15,8 +15,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 110px);
-    grid-template-rows: repeat(3, 110px);
+    grid-template-columns: repeat(auto-fill, 110px);
+    grid-template-rows: repeat(auto-fill, 110px);
     margin: 100px auto;
     background-color: #b197fc;
     height: 380px;
@@ -28,6 +28,7 @@ body {
     justify-content: center;
     align-content: center;
     position: relative;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
 }
 
 .square {
@@ -74,17 +75,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+    transition: height 300ms ease, width 300ms ease, transform 300ms ease;
 }
 
 .btn:hover {
     cursor: pointer;
     background-color: #d85b86;
+    height: 72px;
+    width: 388px;
+    transform: translate(-50%, 76px);
 }
 
 .btn-disabled,
 .btn-disabled:hover {
     cursor: default;
     background-color: #f3cedb;
+    box-shadow: none;
+    height: 68px;
+    width: 380px;
+    transform: translate(-50%, 74px);
 }
 
 /* GRID SQUARES POSITION */
