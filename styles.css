@@ -1,0 +1,127 @@
+/* #b197fc */
+/* #845ef7 */
+/* #495057 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body {
+    background-color: #f7f5ff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 110px);
+    margin: 100px auto;
+    background-color: #b197fc;
+    height: 380px;
+    width: 380px;
+    gap: 2px;
+    border-radius: 16px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: #845ef7;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: #f06595;
+}
+
+.selected {
+    background-color: #f06595;
+}
+
+.lamp-icon {
+    height: 36px;
+    width: 36px;
+    stroke: #fff;
+}
+
+.btn {
+    height: 68px;
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 74px);
+    background-color: #f06595;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #d85b86;
+}
+
+.btn-disabled,
+.btn-disabled:hover {
+    cursor: default;
+    background-color: #f3cedb;
+}
+
+/* GRID SQUARES POSITION */
+
+.square--1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.square--2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.square--3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.square--4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.square--5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.square--6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.square--7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.square--8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.square--9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
